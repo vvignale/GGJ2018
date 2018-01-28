@@ -1,23 +1,33 @@
 fileFormatVersion: 2
-guid: a4185bd7940eb47b59eb2d421fd95e07
-timeCreated: 1517103405
+guid: 1b6dae877d79b4519a240911c8f4ff3a
+timeCreated: 1517109665
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCylinder23
+    100002: pCylinder7
+    100004: pCylinder8
     400000: //RootNode
-    400002: pCylinder23
-    2300000: pCylinder23
-    3300000: pCylinder23
-    4300000: pCylinder23
+    400002: pCylinder7
+    400004: pCylinder8
+    2300000: pCylinder7
+    2300002: pCylinder8
+    3300000: pCylinder7
+    3300002: pCylinder8
+    4300000: pCylinder7
+    4300002: pCylinder8
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: pCylinder23Mat
-    second: {fileID: 2100000, guid: 4b612918ab83146428f358074f68d069, type: 2}
+      name: pCylinder7Mat
+    second: {fileID: 2100000, guid: 06399eb4e7ed5461dbb07dec15bce11b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pCylinder8Mat
+    second: {fileID: 2100000, guid: 1140119cfb32e4b8ba3333dce8ed8fa6, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
