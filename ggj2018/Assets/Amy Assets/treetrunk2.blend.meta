@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 21371aab4c5a040159e971bc0c8ec455
 timeCreated: 1517101867
 licenseType: Pro
@@ -18,6 +19,15 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: unnamed
     second: {fileID: 2100000, guid: 54b36055c944f421c823f1eabac2651f, type: 2}
+=======
+guid: edceb43ea448948dfa650f28a9a9c9c3
+timeCreated: 1517102951
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName: {}
+  externalObjects: {}
+>>>>>>> 711a99de43ecb29042cc817df2b101b1108e3374
   materials:
     importMaterials: 1
     materialName: 0

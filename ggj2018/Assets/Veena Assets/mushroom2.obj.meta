@@ -1,33 +1,23 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 24da29064923842e1b76221d5e021922
-timeCreated: 1517100821
-licenseType: Pro
+guid: ad0dd75d9a8da4efe9f72af91f0dbcdd
+timeCreated: 1517103400
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
+    100002: pCylinder22
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: Cylinder_001
-    7400000: Default Take
-    9500000: //RootNode
+    400002: pCylinder22
+    2300000: pCylinder22
+    3300000: pCylinder22
+    4300000: pCylinder22
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: unnamed
-    second: {fileID: 2100000, guid: 54b36055c944f421c823f1eabac2651f, type: 2}
-=======
-guid: 913733c2ab1054cc3b0534f7d25a1308
-timeCreated: 1517099581
-licenseType: Free
-ModelImporter:
-  serializedVersion: 22
-  fileIDToRecycleName: {}
-  externalObjects: {}
->>>>>>> 711a99de43ecb29042cc817df2b101b1108e3374
+      name: pCylinder22Mat
+    second: {fileID: 2100000, guid: 0c9cd3b9ae5294dec905f9701b9dc3ed, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -99,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
