@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Alejandro Assets/Scenes/opening.unity
+    guid: a6e340d688ed0447186928b6b9d66ba9
+  - enabled: 1
+    path: Assets/Alejandro Assets/Scenes/main game.unity
+    guid: 4e463a8cbfa274dfcac4e1406092def7
+  - enabled: 1
+    path: Assets/Alejandro Assets/Scenes/ending.unity
+    guid: 960169759b32d43e6b5a0dbf7f182c98
