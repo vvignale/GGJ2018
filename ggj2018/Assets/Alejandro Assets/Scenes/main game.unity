@@ -21864,11 +21864,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400014, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 2}
       propertyPath: walkSpeed
-      value: 20
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11400014, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 2}
       propertyPath: slideWhenOverSlopeLimit
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 2}
+      propertyPath: sensitivityX
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 2}
+      propertyPath: sensitivityY
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 2}
+      propertyPath: sensitivityX
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 2}
+      propertyPath: sensitivityY
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 2}

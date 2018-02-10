@@ -9,12 +9,16 @@ public class CameraToggler : MonoBehaviour {
 	public GameObject[] cameras; 
 	public Vector3[] camStartPos;
 	private int currentCam, previousCam; 
-	public float camThresh = 3.0f, camTimer, anyKeyTimer, anyKeyThresh = 7.0f, controlsThresh = 5.0f; 
-	public GameObject fishObj, controlsUI;
+	private float camThresh = 3.0f, camTimer, anyKeyTimer, anyKeyThresh = 7.0f, controlsThresh = 5.0f, titleThresh = 5.0f; 
+	public GameObject fishObj, controlsUI, titleUI;
+	public GameObject[] controlsStuff;
 
 	public Animator anyKeyAnim;
+	public Animator anyKeyAnim2; 
 
 	private bool blinkCheck; 
+
+	private int titleState; 
 
 	void Start () 
 	{
@@ -55,23 +59,59 @@ public class CameraToggler : MonoBehaviour {
 		}
 
 		anyKeyTimer += Time.deltaTime;
-		if(anyKeyTimer >= controlsThresh)
+//		if(anyKeyTimer >= controlsThresh)
+//		{
+//			controlsUI.SetActive(true);
+//		}
+		if(anyKeyTimer >= titleThresh && titleState == 0)
 		{
-			controlsUI.SetActive(true);
+			
+			titleState = 1; 
+			titleUI.SetActive(true);
 		}
-
-		if(anyKeyTimer >= anyKeyThresh)
+		if(anyKeyTimer >= anyKeyThresh && titleState == 1)
 		{
+			anyKeyAnim.SetTrigger("blink");
 			if(Input.anyKey)
 			{
 				//flash press any key 
-				SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
+				//SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
 				//fade to black would be nice
+
+				//controlsUI.SetActive(true);
+
+				titleUI.SetActive(false);
+
+				for(int i = 0; i < controlsStuff.Length; i++)
+				{
+					controlsStuff[i].SetActive(true);
+				}
+
+				anyKeyAnim.gameObject.SetActive(false);
+				titleState = 2; 
 			}
 
+
+		}
+
+		if(anyKeyTimer >= anyKeyThresh + 2.0f && titleState == 2)
+		{
 			if(!blinkCheck)
 			{
+				anyKeyAnim.gameObject.SetActive(true);
 				anyKeyAnim.SetTrigger("blink");
+			}
+
+
+			if(Input.anyKey)
+			{
+				for(int i = 0; i < controlsStuff.Length; i++)
+				{
+					controlsStuff[i].SetActive(false);
+				}
+				anyKeyAnim.gameObject.SetActive(false);
+				//delay or fade out? 
+				SceneManager.LoadScene(levelToLoad, LoadSceneMode.Single);
 			}
 		}
 
